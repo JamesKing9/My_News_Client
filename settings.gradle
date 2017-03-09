@@ -1,1 +1,1 @@
-include ':app', ':vpinvpdemo', ':360news'
+include ':app', ':vpinvpdemo', ':360news', ':toolbar_demo_checkpoint3', ':toolbar_demo_checkpoint2', ':toolbar_demo_checkpoint1', ':toolbar_demo_checkpoint0', ':AndroidSystemUiTraining'

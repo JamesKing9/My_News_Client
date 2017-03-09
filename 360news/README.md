@@ -3,8 +3,11 @@
 * 2 修改 url 为我们的ip
 
 # 做了什么？
-1 recyclerview展示不同类型的item
-2 自定义view：RecycleViewDivider，给条目设置分割线
+* 1 recyclerview展示不同类型的item
+* 2 自定义view：RecycleViewDivider，给条目设置分割线
+* 3 ButterKnife8：ButterKnife.bind(this);
+* 4 photoview;
+* 5 WebView 和 js 互调；
 
 
 联网获取数据
