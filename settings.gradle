@@ -1,0 +1,1 @@
+include ':app', ':vpinvpdemo', ':360news'
