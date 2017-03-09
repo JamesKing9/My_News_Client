@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ViewPager vp = (ViewPager) findViewById(R.id.vp);
 
         //初始化Fragment页面对象
@@ -29,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(new SettingFragment());
 
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager(),fragments);
+        //给viewpager设置适配器
         vp.setAdapter(adapter);
     }
 }

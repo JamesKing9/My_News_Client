@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
- * Created by Apple on 2016/9/21.
+ *
  */
 public class SettingFragment extends Fragment {
 
@@ -20,7 +20,7 @@ public class SettingFragment extends Fragment {
         tv.setTextSize(20);
         tv.setTextColor(Color.RED);
         tv.setGravity(Gravity.CENTER);
-        tv.setText("设置");
+        tv.setText("SettingFragment: 设置");
         return tv;
     }
 }

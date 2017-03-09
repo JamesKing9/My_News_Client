@@ -20,7 +20,7 @@ public class NewsCenterFragment extends Fragment {
         tv.setTextSize(20);
         tv.setTextColor(Color.RED);
         tv.setGravity(Gravity.CENTER);
-        tv.setText("新闻中心");
+        tv.setText("NewsCenterFragment: 新闻中心");
         return tv;
     }
 }
