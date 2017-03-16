@@ -1,1 +1,1 @@
-include ':app', ':vpinvpdemo', ':360news', ':toolbar_demo_checkpoint3', ':toolbar_demo_checkpoint2', ':toolbar_demo_checkpoint1', ':toolbar_demo_checkpoint0', ':AndroidSystemUiTraining'
+include ':vpinvpdemo', ':360news', ':toolbar_demo_checkpoint3', ':toolbar_demo_checkpoint2', ':toolbar_demo_checkpoint1', ':toolbar_demo_checkpoint0', ':AndroidSystemUiTraining', ':dragger2_demo', ':ptr-demo', ':ptr-lib', ':mypulltorefresh-demo'

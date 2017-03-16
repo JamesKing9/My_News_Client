@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         String url = "http://10.0.3.2:8080/360/list1.json";
 
         //联网获取数据
-        OkHttpUtils
+        OkHttpUtils     /*compile 'com.zhy:okhttputils:2.6.2'*/
                 .get()
                 .url(url)
                 .build()
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response, int id) {
                         ResuleBean resuleBean = new Gson().fromJson(response, ResuleBean.class);
-                        rv.setAdapter(new NewsAdapter(resuleBean.data,getApplicationContext()));
+                        rv.setAdapter(new NewsAdapter(resuleBean.data, getApplicationContext()));
                     }
                 });
     }

@@ -12,14 +12,20 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by Tea on 2016/8/25.
+ * <h3>RecycleViewDivider 是一个自定义的view：item之间的分割线。</h3>
+ * <ul>
+ *     <li> 该类可以作为工具使用；</li>
+ * </ul>
+ *
  */
 public class RecycleViewDivider extends RecyclerView.ItemDecoration {
 
     private Paint mPaint;
     private Drawable mDivider;
-    private int mDividerHeight = 2;//分割线高度，默认为1px
-    private int mOrientation;//列表的方向：LinearLayoutManager.VERTICAL或LinearLayoutManager.HORIZONTAL
+    /**定义分割线高度，默认为 1 px*/
+    private int mDividerHeight = 2;
+    /**列表的方向：LinearLayoutManager.VERTICAL 或 LinearLayoutManager.HORIZONTAL*/
+    private int mOrientation;
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
 
     /**
@@ -78,7 +84,7 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
     //绘制分割线
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
-        super.onDraw(c, parent, state);
+        super.onDraw(c, parent, state); //调用父类的onDraw 方法
         if (mOrientation == LinearLayoutManager.VERTICAL) {
             drawVertical(c, parent);
         } else {
@@ -106,7 +112,11 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
         }
     }
 
-    //绘制纵向 item 分割线
+    /**
+     * 自定义：绘制纵向 item 分割线
+     * @param canvas
+     * @param parent
+     */
     private void drawVertical(Canvas canvas, RecyclerView parent) {
         final int top = parent.getPaddingTop();
         final int bottom = parent.getMeasuredHeight() - parent.getPaddingBottom();

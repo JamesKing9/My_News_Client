@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
 
+        <!--活动界面：新闻详情-->
         <activity android:name="com.cheng.a360news.NewsDetailActivity"/>
+        <!--活动界面：展示网页中的大图展示-->
         <activity android:name="com.cheng.a360news.ShowActivity"/>
     </application>
 

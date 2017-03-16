@@ -1,5 +1,6 @@
 package com.cheng.a360news.adapter;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -19,9 +20,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by Apple on 2016/10/8.
- */
 public class NewsAdapter extends RecyclerView.Adapter {
 
     private List<ResuleBean.NewsData> newsDataList;
